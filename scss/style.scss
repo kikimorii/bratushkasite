@@ -103,6 +103,7 @@ body.lock{
             padding-right: 12px;
             display: flex;
             padding-bottom: 20px;
+            padding-right: 45px;
         }
     }
     &_school_info {
@@ -547,11 +548,6 @@ body.lock{
     }
     &_menu {
         &_links {
-            &_right {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-            }
             &_list {
                 margin-left: 30px;
                 &_item::before {

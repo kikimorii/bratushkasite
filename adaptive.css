@@ -384,6 +384,7 @@
     background-size: cover;
     width: 15px;
     height: 51px;
+    top: 100px;
   }
   .about_photo {
     width: 200px;
