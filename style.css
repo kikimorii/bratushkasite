@@ -470,9 +470,7 @@ body.lock {
 }
 .gallery_slider {
   display: flex;
-  gap: 10px;
   height: 100%;
-  will-change: transform;
 }
 .gallery_slider_wrap {
   overflow: hidden;
