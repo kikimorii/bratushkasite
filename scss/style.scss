@@ -507,9 +507,10 @@ body.lock{
         }
     }
     &_slider {
+        overflow-x: scroll;
         display: flex;
+        gap: 10px;
         height: 100%;
-        width: 0;
         justify-content: space-between;
         &_wrap {
             overflow: hidden;
@@ -522,9 +523,6 @@ body.lock{
         &_img {
             height: 100%;
             object-fit: cover;
-        }
-        &_item {
-            aspect-ratio: 1/1;
         }
     }
 }

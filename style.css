@@ -469,9 +469,10 @@ body.lock {
   grid-row-end: 10;
 }
 .gallery_slider {
+  overflow-x: scroll;
   display: flex;
+  gap: 10px;
   height: 100%;
-  width: 0;
   justify-content: space-between;
 }
 .gallery_slider_wrap {
@@ -485,9 +486,6 @@ body.lock {
 .gallery_slider_img {
   height: 100%;
   object-fit: cover;
-}
-.gallery_slider_item {
-  aspect-ratio: 1/1;
 }
 
 .footer p, .footer a {
