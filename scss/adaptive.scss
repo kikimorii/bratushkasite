@@ -380,8 +380,17 @@
             height: 250px;
         }
         &_slider {
-            &_wrap {
-                display: block;
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 15px;
+            overflow-y: hidden;
+            &_item {
+                height: 300px;
+            }
+            &_img {
+                height: 100%;
             }
         }
     }
@@ -500,8 +509,8 @@
             height: 150px;
         }
         &_slider {
-            &_wrap {
-                height: 150px;
+            &_item {
+                height: 200px;
             }
         }
     }

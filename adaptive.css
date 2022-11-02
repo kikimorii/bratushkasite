@@ -324,8 +324,19 @@
     gap: 0;
     height: 250px;
   }
-  .gallery_slider_wrap {
-    display: block;
+  .gallery_slider {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    overflow-y: hidden;
+  }
+  .gallery_slider_item {
+    height: 300px;
+  }
+  .gallery_slider_img {
+    height: 100%;
   }
 
   .footer_name {
@@ -428,8 +439,8 @@
   .gallery_list {
     height: 150px;
   }
-  .gallery_slider_wrap {
-    height: 150px;
+  .gallery_slider_item {
+    height: 200px;
   }
 
   .footer a {
