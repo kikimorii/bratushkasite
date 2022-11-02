@@ -471,6 +471,7 @@ body.lock {
 .gallery_slider {
   display: flex;
   height: 100%;
+  width: 0;
 }
 .gallery_slider_wrap {
   overflow: hidden;

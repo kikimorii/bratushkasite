@@ -509,6 +509,7 @@ body.lock{
     &_slider {
         display: flex;
         height: 100%;
+        width: 0;
         &_wrap {
             overflow: hidden;
             position: relative;
