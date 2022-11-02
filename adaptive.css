@@ -1,0 +1,448 @@
+@media only screen and (max-width: 1600px) {
+  .conteiner {
+    width: 88%;
+  }
+
+  .header {
+    height: 800px;
+  }
+  .header_bg {
+    width: 100%;
+  }
+  .header_title {
+    margin-top: 200px;
+  }
+
+  .about_bg {
+    height: auto;
+  }
+  .about_conteiner {
+    width: 100%;
+  }
+  .about_arrow_up {
+    width: 100%;
+    background-position: right;
+  }
+  .about_photo {
+    margin-left: 80px;
+  }
+  .about_content_text_addinfo {
+    margin-top: 175px;
+  }
+  .about_content_text_second_addinfo {
+    float: none;
+    margin-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .gallery_right_top_circs {
+    width: 259px;
+    height: 300px;
+    background-size: cover;
+  }
+  .gallery_bottom_front_photo_big_white {
+    background-size: cover;
+    width: 278px;
+    height: 270px;
+  }
+  .gallery_bottom_front_photo_big_purp {
+    background-size: cover;
+    width: 305px;
+    height: 259px;
+  }
+  .gallery_bottom_front_photo_small_purp {
+    background-size: cover;
+    width: 187px;
+    height: 187px;
+  }
+  .gallery_bottom_front_photo_small_white {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+  .gallery_bottom_front_photo_crosses {
+    background-size: cover;
+    width: 80px;
+    height: 22px;
+    left: 510px;
+  }
+  .gallery_conteiner {
+    width: 100%;
+  }
+
+  .gallery__item--6 {
+    grid-row-start: 2;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .gallery__item--7 {
+    grid-column-start: 2;
+  }
+
+  .gallery__item--11 {
+    grid-row-end: 9;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header {
+    height: 750px;
+  }
+  .header_bg {
+    background-position-x: -135px;
+    background-size: cover;
+  }
+  .header_title {
+    margin-top: 150px;
+  }
+
+  .about_content {
+    gap: 40px;
+  }
+  .about_content_text_title {
+    font-size: 48px;
+    line-height: 47px;
+  }
+  .about_content_text_list_item {
+    flex-direction: column;
+  }
+  .about_content_text_info {
+    width: auto;
+  }
+  .about_content_text_second_addinfo {
+    width: auto;
+  }
+
+  .gallery_bg {
+    height: 710px;
+  }
+  .gallery_list {
+    height: 500px;
+  }
+
+  .gallery_bottom_front_photo_big_white {
+    width: 216px;
+    height: 200px;
+  }
+  .gallery_bottom_front_photo_big_purp {
+    width: 234px;
+    height: 200px;
+  }
+  .gallery_bottom_front_photo_small_purp {
+    width: 145px;
+    height: 145px;
+    left: 320px;
+  }
+  .gallery_bottom_front_photo_small_white {
+    width: 31px;
+    height: 31px;
+    left: 330px;
+  }
+  .gallery_bottom_front_photo_crosses {
+    width: 62px;
+    left: 448px;
+    height: 16px;
+  }
+
+  .footer_bg {
+    height: auto;
+  }
+  .footer_wrapper {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+  .footer_name {
+    margin-bottom: 62px;
+    margin-top: 33px;
+  }
+  .footer_menu_links_left {
+    margin-top: 22px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about_content {
+    gap: 60px;
+  }
+  .about_content_text_quote {
+    float: none;
+  }
+  .about_content_text_addinfo {
+    margin-top: 205px;
+  }
+  .about_photo {
+    width: 274px;
+    height: 425px;
+  }
+  .about_photo_img {
+    width: 274px;
+    height: 425px;
+  }
+  .about_photo_border {
+    width: 274px;
+    height: 425px;
+  }
+
+  .gallery_bottom_front_photo {
+    display: none;
+  }
+
+  .gallery_content_title_text {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header_menu_list {
+    display: none;
+  }
+  .header_burger {
+    float: right;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header_burger::before, .header_burger::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header_burger::before {
+    top: 0;
+  }
+  .header_burger::after {
+    bottom: 0;
+  }
+  .header_title {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 700px;
+  }
+  .header_title {
+    font-size: 50px;
+    line-height: 45px;
+    width: 80%;
+    margin-top: 120px;
+  }
+
+  .about_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_content_text_addinfo {
+    width: auto;
+  }
+  .about_content_text_title {
+    font-style: 56px;
+    line-height: 58px;
+  }
+  .about_content_text_list {
+    margin-top: 40px;
+  }
+  .about_content_text_quote_under_quote {
+    width: 458px;
+    top: 80px;
+  }
+  .about_photo {
+    margin-left: 0;
+    width: 340px;
+    height: 527px;
+  }
+  .about_photo_img {
+    width: 340px;
+    height: 527px;
+  }
+  .about_photo_border {
+    width: 340px;
+    height: 527px;
+  }
+
+  .gallery_bg {
+    height: auto;
+  }
+  .gallery_right_top {
+    display: none;
+  }
+  .gallery_list {
+    margin-top: 30px;
+    height: auto;
+  }
+  .gallery_content_title {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 600px;
+  }
+  .header_school_info {
+    width: 370px;
+    line-height: 23px;
+    font-size: 20px;
+  }
+  .header_title {
+    font-size: 40px;
+    margin-top: 75px;
+    line-height: 42px;
+  }
+
+  .about_content_text_quote {
+    width: 100%;
+  }
+
+  .about_content_text_quote_text {
+    width: 100%;
+  }
+
+  .about_content_text_quote_under_quote {
+    display: none;
+  }
+
+  .gallery_bg {
+    height: 500px;
+  }
+  .gallery_content_wrapper {
+    padding-top: 30px;
+  }
+  .gallery_content_title {
+    gap: 30px;
+  }
+  .gallery_list {
+    display: none;
+    gap: 0;
+    height: 250px;
+  }
+  .gallery_slider_wrap {
+    display: block;
+  }
+
+  .footer_name {
+    width: auto;
+  }
+  .footer_name_text {
+    font-style: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .adaprive_br {
+    display: block;
+  }
+
+  .conteiner {
+    width: 94%;
+  }
+
+  .header {
+    height: 567px;
+  }
+  .header_school_info {
+    margin-top: 108px;
+    font-size: 16px;
+    width: 289px;
+    line-height: 19px;
+  }
+  .header_title {
+    width: 275px;
+    font-size: 33px;
+    height: 245px;
+    line-height: 35px;
+    margin-top: 47px;
+  }
+
+  .about_back_photo {
+    top: 135px;
+  }
+  .about_back_photo_circ {
+    width: 150px;
+    height: 177px;
+    background-size: cover;
+  }
+  .about_back_photo_crosses {
+    background-size: cover;
+    width: 15px;
+    height: 51px;
+  }
+  .about_photo {
+    width: 200px;
+    height: 307px;
+  }
+  .about_photo_img {
+    width: 200px;
+    height: 307px;
+  }
+  .about_photo_border {
+    width: 200px;
+    height: 307px;
+  }
+  .about_content_text_title {
+    font-size: 36px;
+    line-height: 35px;
+  }
+  .about_content_text_subtitle {
+    font-size: 16px;
+  }
+  .about_content_text_info {
+    font-size: 16px;
+  }
+  .about_content_text_quote {
+    width: 100%;
+  }
+  .about_content_text_quote_text {
+    font-size: 16px;
+    width: auto;
+  }
+  .about_content_text_quote_under_quote {
+    display: none;
+  }
+  .about_content_text_addinfo_content {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .about_content_text_second_addinfo_content {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .gallery_bg {
+    height: 346px;
+  }
+  .gallery_content_title {
+    gap: 12px;
+  }
+  .gallery_content_title_text {
+    font-size: 36px;
+    text-underline-offset: 5px;
+  }
+  .gallery_list {
+    height: 150px;
+  }
+  .gallery_slider_wrap {
+    height: 150px;
+  }
+
+  .footer a {
+    font-size: 16px;
+  }
+
+  .footer_wrapper {
+    padding-top: 20px;
+  }
+  .footer_menu_links_left {
+    margin-top: 5px;
+  }
+  .footer_menu_links_list_item {
+    line-height: 19px;
+  }
+}
