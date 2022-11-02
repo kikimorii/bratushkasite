@@ -472,9 +472,7 @@ body.lock {
   display: flex;
   height: 100%;
   width: 0;
-}
-.gallery_slider_item {
-  flex: 0 0 33%;
+  justify-content: space-between;
 }
 .gallery_slider_wrap {
   overflow: hidden;
