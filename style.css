@@ -486,6 +486,9 @@ body.lock {
   height: 100%;
   object-fit: cover;
 }
+.gallery_slider_item {
+  aspect-ratio: 1/1;
+}
 
 .footer p, .footer a {
   color: #001D97;

@@ -523,6 +523,9 @@ body.lock{
             height: 100%;
             object-fit: cover;
         }
+        &_item {
+            aspect-ratio: 1/1;
+        }
     }
 }
 
