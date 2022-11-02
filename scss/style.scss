@@ -508,13 +508,11 @@ body.lock{
     }
     &_slider {
         overflow-x: scroll;
+        overflow-y: hidden;
         display: flex;
-        gap: 10px;
         height: 100%;
-        justify-content: space-between;
+        justify-content: flex-start;
         &_wrap {
-            overflow: hidden;
-            position: relative;
             display: none;
             margin-top: 30px;
             height: 250px;
