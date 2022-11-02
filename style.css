@@ -468,6 +468,9 @@ body.lock {
   grid-row-start: 6;
   grid-row-end: 10;
 }
+.gallery_slider {
+  display: none;
+}
 
 .footer p, .footer a {
   color: #001D97;

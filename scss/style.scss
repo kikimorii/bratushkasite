@@ -506,7 +506,9 @@ body.lock{
             grid-row-end: 10;
         }
     }
-    
+    &_slider {
+        display: none;
+    }
 }
 
 .footer {
