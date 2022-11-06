@@ -447,7 +447,6 @@
   .footer a {
     font-size: 16px;
   }
-
   .footer_wrapper {
     padding-top: 20px;
   }
@@ -456,5 +455,9 @@
   }
   .footer_menu_links_list_item {
     line-height: 19px;
+  }
+  .footer_name_text {
+    font-size: 40px;
+    line-height: 35px;
   }
 }

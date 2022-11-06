@@ -172,6 +172,12 @@
         &_wrapper {
             padding-top: 20px;
         }
+        &_name {
+            &_text {
+                font-size: 40px;
+                line-height: 35px;
+            }
+        }
         &_menu{
             &_links {
                 &_left {
@@ -179,6 +185,20 @@
                 }
                 &_list_item {
                     line-height: 19px;
+                }
+            }
+        }
+    }
+    .files {
+        &_content {
+            &_block {
+                width: 300px;
+                &_text {
+                    &_title {
+                        & > img {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
