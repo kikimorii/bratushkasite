@@ -516,11 +516,10 @@
         }
     }
     
-    .footer a {
-        font-size: 16px;
-    }
-
     .footer {
+        & a {
+            font-size: 16px;
+        }
         &_wrapper {
             padding-top: 20px;
         }

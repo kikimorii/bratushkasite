@@ -1,0 +1,268 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #001D97;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+a:hover:before {
+  transform: scaleX(1);
+}
+a::before {
+  content: '';
+  bottom: -5px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #001D97;
+  transition: 0.2s;
+  transform: scaleX(0);
+}
+
+.footer_menu_link::before {
+  bottom: -3px;
+  background-color: #001D97;
+}
+
+h1, h2, h3, .header_logo_link {
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 62px;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner {
+  width: 1390px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+}
+.header_conteiner {
+  height: 100%;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.header_menu_list {
+  display: flex;
+  gap: 45px;
+}
+.header_menu_list.active {
+  position: fixed;
+  width: 100%;
+  align-items: flex-end;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 90px;
+  background-color: #fff;
+  padding-right: 12px;
+  display: flex;
+  padding-bottom: 20px;
+  padding-right: 45px;
+  z-index: 1;
+}
+.header_burger {
+  display: none;
+}
+.header_burger.active {
+  z-index: 3;
+}
+.header_burger.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+  transition: all 0.3s ease 0s;
+}
+.header_burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+  transition: all 0.3s ease 0s;
+}
+.header_burger.active span {
+  transform: scale(0);
+}
+
+.files {
+  flex: 1 1 auto;
+  margin-top: 30px;
+  min-height: 755px;
+}
+.files_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.files_menu_title {
+  width: 640px;
+  color: #0060FF;
+}
+.files_menu_list {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 15px;
+}
+.files_content {
+  margin-top: 63px;
+  padding-bottom: 80px;
+}
+.files_content_initial_title {
+  color: #3C3C3C;
+}
+.files_content_class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.files_content_block {
+  width: 450px;
+  height: 300px;
+  background: #F1F1F1;
+  border-radius: 20px;
+  padding: 11px;
+}
+.files_content_block_dowload:hover:before {
+  transform: scaleX(0);
+}
+.files_content_block_img {
+  height: 200px;
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.files_content_block_img > img {
+  max-height: 85%;
+  max-width: 90%;
+}
+.files_content_block_text {
+  margin-top: 10px;
+}
+.files_content_block_text_disc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #AAA8A8;
+}
+.files_content_block_text_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 7px;
+  font-family: 'Lato', sans-serif;
+  text-transform: none;
+}
+.files_content_block_text_title > img {
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.footer p, .footer a {
+  color: #FFFFFF;
+}
+.footer a::before {
+  background-color: #FFFFFF;
+}
+.footer_bg {
+  height: 400px;
+  background-color: #001D97;
+}
+.footer_conteiner {
+  height: 100%;
+}
+.footer_wrapper {
+  display: flex;
+  padding-top: 79px;
+  justify-content: space-between;
+}
+.footer_name {
+  width: 421px;
+  margin-top: 44px;
+}
+.footer_name_text {
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 46px;
+}
+.footer_name_crosses {
+  background-image: url(img/footer_files_crosses.svg);
+  height: 27px;
+  width: 102px;
+  background-size: cover;
+  margin-top: 14px;
+}
+.footer_menu_links_list {
+  margin-left: 30px;
+}
+.footer_menu_links_list_item::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FFFFFF;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.files_content_block_wrapper {
+  display: none;
+}
+
+.files_content_block_wrapper:first-child {
+  display: block;
+}
+
+.files_menu_list .active > .files_menu_list_link {
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}

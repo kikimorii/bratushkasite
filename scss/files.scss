@@ -1,0 +1,285 @@
+$mainFontFamily: 'Lato', sans-serif;
+$contentTitleFontFamily: 'Inter', sans-serif;
+$titleFontFamily: 'Neue Machina', sans-serif;
+
+$mainFontSize: 24px;
+$titleFontSize: 64px;
+$contentFontSize: 20px;
+
+$mainColor: #001D97;
+$footerColor: #FFFFFF;
+$titleColor: #0060FF;
+$contentColor: #3C3C3C;
+
+$maxWidthContainer: 1390px;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFontFamily;
+    color: $mainColor;
+    font-size: $mainFontSize;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    &:hover:before {
+        transform: scaleX(1);
+    }
+    &::before {
+        content: '';
+        bottom: -5px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #001D97;
+        transition: 0.2s;
+        transform: scaleX(0);
+    }
+}
+
+.footer_menu_link {
+    &::before {
+        bottom: -3px;
+        background-color: #001D97;
+    }
+}
+
+h1, h2, h3, .header_logo_link {
+    font-family: $titleFontFamily;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: $titleFontSize;
+    line-height: 62px;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner {
+    width: $maxWidthContainer;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    &_conteiner {
+        height: 100%;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+    &_menu {
+        &_list {
+            display: flex;
+            gap: 45px;
+            &.active{
+                position: fixed;
+                width: 100%;
+                align-items: flex-end;
+                top: 0;
+                right: 0;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-top: 90px;
+                background-color: #fff;
+                padding-right: 12px;
+                display: flex;
+                padding-bottom: 20px;
+                padding-right: 45px;
+                z-index: 1;
+            }
+        }
+    }
+    &_burger {
+        display: none;
+        &.active {
+            z-index: 3;
+            &::before {
+                transform: rotate(45deg);
+                top: 9px;
+                transition: all 0.3s ease 0s;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 9px;
+                transition: all 0.3s ease 0s;
+            }
+            & span {
+                transform: scale(0);
+            }
+        }
+    }
+}
+
+.files{
+    flex: 1 1 auto;
+    margin-top: 30px;
+    min-height: 755px;
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &_title {
+            width: 640px;
+            color: $titleColor;
+        }
+        &_list {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 15px;
+        }
+    }
+    &_content {
+        margin-top: 63px;
+        padding-bottom: 80px;
+        &_initial {
+            &_title {
+                color: $contentColor;
+            }
+        }
+        &_class {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        &_block {
+            width: 450px;
+            height: 300px;
+            background: #F1F1F1;
+            border-radius: 20px;
+            padding: 11px;
+            &_dowload:hover:before {
+                transform: scaleX(0);
+            }
+            &_img {
+                height: 200px;
+                background-color: white;
+                border-radius: 20px 20px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & > img {
+                    max-height: 85%;
+                    max-width: 90%;
+                }
+            }
+            &_text {
+                margin-top: 10px;
+                &_disc {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #AAA8A8;
+                }
+                &_title {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 20px;
+                    margin-bottom: 7px;
+                    font-family: 'Lato', sans-serif;
+                    text-transform: none;
+                    & > img {
+                        margin-left: 10px;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    & p, a {
+        color: $footerColor;
+    }
+    & a::before {
+        background-color: $footerColor;
+    }
+    &_bg {
+        height: 400px;
+        background-color: $mainColor;
+    }
+    &_conteiner {
+        height: 100%;
+    }
+    &_wrapper {
+        display: flex;
+        padding-top: 79px;
+        justify-content: space-between;
+    }
+    &_name {
+        width: 421px;
+        margin-top: 44px;
+        &_text {
+            font-family: $titleFontFamily;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 48px;
+            line-height: 46px;
+        }
+        &_crosses {
+            background-image: url(img/footer_files_crosses.svg);
+            height: 27px;
+            width: 102px;
+            background-size: cover;
+            margin-top: 14px;
+        }
+    }
+    &_menu {
+        &_links {
+            &_list {
+                margin-left: 30px;
+                &_item::before {
+                    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                    color: $footerColor; /* Change the color */
+                    font-weight: bold; /* If you want it to be bold */
+                    display: inline-block; /* Needed to add space between the bullet and the text */
+                    width: 1em; /* Also needed for space (tweak if needed) */
+                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                }
+            }
+        }
+    }
+}
+
+.files_content_block_wrapper { display: none; }
+.files_content_block_wrapper:first-child { display: block; }
+
+.files_menu_list .active > .files_menu_list_link {
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
