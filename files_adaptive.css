@@ -153,6 +153,9 @@
   .files_content_block {
     width: 300px;
   }
+  .files_content_block_text_title {
+    font-size: 20px;
+  }
   .files_content_block_text_title > img {
     display: none;
   }
